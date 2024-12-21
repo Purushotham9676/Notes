@@ -1,0 +1,13 @@
+Version Control :
+Version control is a system that records changes to files over time, allowing you to track changes, revert to previous versions, and collaborate with others.
+some popular tools : GIT, BitKeeper, Subversion, Mercurial etc....
+
+GIT
+Git is a distributed version control system, meaning every contributor has a complete history of the repository.
+
+Why Git?
+Tracks and manages changes to code.
+Allows collaboration among multiple developers.
+Provides a history of changes, enabling you to see what has been done and by whom.
+Makes it easy to revert changes and fix mistakes.
+
