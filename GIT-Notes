@@ -11,3 +11,28 @@ Allows collaboration among multiple developers.
 Provides a history of changes, enabling you to see what has been done and by whom.
 Makes it easy to revert changes and fix mistakes.
 
+User Configuration Commands :
+git config --global user.name "user_name"
+git config --global user.email "user_mail_id"
+
+To view current configured user
+git config --list
+
+Workflow 
+git init -> to initialize a empty repo
+git status -> Shows the current status of files/Changes
+git add <file> -> to stage files/changes to be committed.
+git add . -> to stage all files/changes once
+git commit -m "commit message" -> Commit changes with a descriptive message.
+git reset HEAD <file> -> unstage changes that have been added to the staging area (staging to WorkSpace).
+git rest HEAD -> unstage all the changes that have been added to the staging area.
+git reset --soft cid(n-1) -> Uncommits changes but keeps them staged for editing or recommitting(local_repo to Staging).
+git reset --mixed cid(n-1) -> Unstages all the files you've added to the staging area.
+
+Working with remote Repo
+git clone <repo_url>
+git push -> Push to the default remote repository (origin) on the current branch.
+git push origin <branch_name> -> To push to a specific remote and branch.
+git push --all -> If you want to push all your local branches to the remote.
+git pull -> Fetch changes from the remote repository and merge them into your local branch.
+git pull origin <branch_name> -> pull changes from a specific remote repository and a specific branch.
