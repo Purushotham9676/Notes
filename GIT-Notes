@@ -123,3 +123,5 @@ git pull = git fetch + git merge
 git revert 
 git revert is used to undo a commit by creating a new commit that reverses the changes.
 
+Interview Questions
+
