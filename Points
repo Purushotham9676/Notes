@@ -3,3 +3,10 @@ m-1 : sudo usermod -aG sudo username
 m-2 : Sudoers file - /etc/sudoers
 visudo
 username  ALL=(ALL) ALL
+
+# ssh passwordless authentication
+ssh-keygen -> /home/user_name/.ssh/
+Copy the Public Key to the Remote Server
+ssh-copy-id user@remote_server
+before proceeding we should edit -> sudo vim /etc/ssh/sshd_config -> PasswordAuthentication yes
+restart sshd service -> sysytemctl serive sshd restart
