@@ -1,0 +1,5 @@
+# adding root privileges to a user 
+m-1 : sudo usermod -aG sudo username
+m-2 : Sudoers file - /etc/sudoers
+visudo
+username  ALL=(ALL) ALL
